@@ -1,0 +1,17 @@
+<?xml version="1.0"?><!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="BaluSistema.Grupe" table='grupes'>
+		<id name="kodas" type="string" column="grupes_kodas" length="12">
+		</id>
+		<property name="stojimoMetai" type="int" column="metai"
+			length="4"/>
+		<property name="specPavadinimas" type="string"
+			column="specialybe" length="50"/>
+			<set name="kursai" cascade="save-update" table="grupes_kursai">
+			<key column="grupes_kodas" />
+			<many-to-many column="kurso_kodas" class="BaluSistema.Kursas" />
+		</set>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?><!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="BaluSistema.Uzduotis" table='UZDUOTYS'>
+	<id name="pavadinimas" type="string" column="PAV" length="30"></id>
+	<property name="salyga" type="string" column="SALYGA" length="255"></property>
+	<property name="vertinimoTvarka" type="string" column="VERT_TVARKA" length="255"></property>
+	<property name="maxBalai" type="float" column="MAX_BALAI"></property>
+	<property name="terminas" type="date" column="TERMINAS"></property>
+	<property name="galimaIkelti" type="boolean" column="GALIMA_IKELTI"></property>
+	<property name="kursoKodas" type="string" column="kurso_kodas" length="10"></property>
+	</class>
+</hibernate-mapping>

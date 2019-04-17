@@ -1,0 +1,10 @@
+<?xml version="1.0"?><!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="BaluSistema.Kursas" table='kursai'>
+	<id name="kodas" type="string" column="kurso_kodas" length="10"></id>
+	<property name="pavadinimas" type="string" column="kurso_pav" length="50"></property>
+	<property name="destytojoID" type="int" column="DEST_ID" length="4"></property>
+	</class>
+</hibernate-mapping>

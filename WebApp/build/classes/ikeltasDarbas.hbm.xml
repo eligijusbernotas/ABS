@@ -1,0 +1,15 @@
+<?xml version="1.0"?><!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="BaluSistema.IkeltasDarbas" table='darbai'>
+	<id name="darboID" type="string" column="DARBO_ID" length="7"></id>
+	<property name="atsakymas" type="string" column="ATS_TEXT" length="255"></property>
+	<property name="ivertinimas" type="float" column="IVERTINIMAS"></property>
+	<property name="ikelimoData" type="date" column="IKELIMO_DATA" insert="false" update="false"></property>
+	<property name="ivertinimoData" type="date" column="IKELIMO_DATA"></property>
+	<property name="komentaras" type="string" column="KOMENTARAS" length="255"></property>
+	<property name="studentoID" type="int" column="STUD_ID"></property>
+	<property name="uzduotiesPav" type="string" column="UZD_PAV" length="30"></property>
+	</class>
+</hibernate-mapping>
